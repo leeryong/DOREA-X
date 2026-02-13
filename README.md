@@ -1,5 +1,5 @@
 # DOREA-X  
-**Document-Oriented Reasoning and Explanation Assistant – eXtended**
+**Document-Oriented Reasoning and Explanation Assistant – X (Cross-domain eXtensible)**
 
 > 연구와 업무 현장에서 즉시 활용 가능한 차세대 문서 이해 AI 플랫폼
 
