@@ -49,7 +49,8 @@
 
 
 ## 참고자료
-- (OLD) DOREA Initial (https://github.com/Byun11/Dorea-pdf-ai)
+- (OLD) KISTI AI Platform Team (BLUESKY), https://github.com/KISTI-AI-Platform-Team/KISTI_BLUESKY
+- (OLD) DOREA Initial, https://github.com/Byun11/Dorea-pdf-ai
 
 
 ---
