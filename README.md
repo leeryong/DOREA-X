@@ -29,9 +29,6 @@
 - **Flexible LLM Support**  
   OpenAI GPT 및 로컬 LLM(Ollama 등) 유연 지원
 
-- **Real-Time Streaming Response**  
-  스트리밍 기반 대화형 응답
-
 - **Conversation & Project Management**  
   대화 기록 저장 및 프로젝트 단위 문서 관리
 
