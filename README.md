@@ -45,7 +45,11 @@
 ## 👥 Developers
 - 이용
 - 장래영
-- 구자현  
+- 구자현
+
+
+## 참고자료
+- (OLD) DOREA Initial (https://github.com/Byun11/Dorea-pdf-ai)
 
 
 ---
