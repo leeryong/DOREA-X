@@ -5,7 +5,6 @@
 
 ---
 <div align="center">
-  <h1>DOREA-X</h1>
   <p>
     <strong>Agentic Document-Oriented Reasoning and Explanation Assistant – X</strong>
   </p>
