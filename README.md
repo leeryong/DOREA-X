@@ -118,7 +118,7 @@
 ## 🏗️ DOREA-X 시스템 구성도
 
 <div align="center">
-  <img src="assets/architecture1.png" alt="Architecture" width="800"/>
+  <img src="assets/architecture.png" alt="Architecture" width="800"/>
 </div>
 
 - **사용자 경험 (UX)** — 문서 이해, 분석, 검색, 생성의 유기적 흐름 제공
