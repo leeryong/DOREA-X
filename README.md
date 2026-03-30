@@ -116,10 +116,24 @@
 - **바로 쓸 수 있는 실용성**: 복잡한 설정 없이 실제 업무에 바로 투입할 수 있습니다.
 - **내가 원하는 대로 확장**: 특정 프로그램이나 서비스에 얽매이지 않고 필요에 따라 기능을 추가할 수 있습니다.
 
+---
+
+## 🏗️ DOREA-X 시스템 구성도
+
+<div align="center">
+  <img src="assets/architecture.png" alt="Architecture" width="800"/>
+</div>
+
+- **사용자 경험 (UX)** — 문서 이해, 분석, 검색, 작성의 유기적 흐름 제공
+- **지능형 에이전트 (Agent)** — 사용자 의도 분석 및 효율적인 도구 활용과 작업 수행
+- **핵심 기능 (Core)** — 멀티모달 RAG, MCP, 문서 관리 및 지능형 작업 메모리
+- **모델 지원 (LLM)** — 보안을 위한 로컬 모델 및 고성능 외부 모델 지원
+
+
 
 ---
 
-## 개발자
+## 🧑‍💻 개발자
 - 이용 (Lee.Ryong@gmail.com)
 - 장래영 (raezero@kisti.re.kr)
 - 구자현 (jahyeongu@kisti.re.kr)
@@ -127,7 +141,22 @@
 ---
 
 
-## 참고자료
+## 📚 참고자료
+
+
+| 이름 | 용도 | 라이선스 |
+| :--- | :--- | :--- |
+| **[OpenDataLoader](https://github.com/opendataloader-project)** | 데이터 추출 및 전처리 파이프라인 | Apache-2.0 |
+| **[Docling](https://github.com/DS4SD/docling)** | 고성능 문서 파싱 및 구조 분석 | MIT |
+| **[Huridocs](https://github.com/huridocs/pdf-document-layout-analysis)** | PDF 레이아웃 분석 및 영역 분할 | Apache-2.0 |
+| **[Ollama](https://github.com/ollama/ollama)** | 로컬 환경 언어 모델 실행 인프라 | MIT |
+| **[Mem0](https://github.com/mem0ai/mem0)** | LLM용 지능형 개인화 작업 메모리 레이어 | Apache-2.0 |
+| **[ChromaDB](https://github.com/chroma-core/chroma)** | AI 벡터 데이터베이스 및 검색 | Apache-2.0 |
+| **[MarkItDown](https://github.com/microsoft/markitdown)** | 다양한 포맷의 문서를 Markdown으로 변환 | MIT |
+| **[Qwen3-TTS](https://github.com/QwenLM/Qwen3-TTS)** | 고품질 음성 합성(Text-to-Speech) 모델 | Apache-2.0 |
+| **[Qwen3-ASR](https://github.com/QwenLM/Qwen3-ASR)** | 자동 음성 인식(Automatic Speech Recognition) 모델 | Apache-2.0 |
+
+
 
 
 
