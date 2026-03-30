@@ -102,7 +102,7 @@
 
 ---
 
-## ✨ What Makes DOREA-X Different
+## ✨ 특징
 
 - **함께 일하는 AI Agent**: 명령을 따르는 도구가 아니라, 함께 생각하는 동료처럼 작동합니다.
 - **바로 쓸 수 있는 실용성**: 복잡한 설정 없이 실제 업무에 바로 투입할 수 있습니다.
@@ -111,7 +111,7 @@
 
 ---
 
-## 👥 Developers
+## 개발자
 - 이용 (Lee.Ryong@gmail.com)
 - 장래영 (raezero@kisti.re.kr)
 - 구자현 (jahyeongu@kisti.re.kr)
