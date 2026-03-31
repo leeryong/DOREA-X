@@ -5,13 +5,7 @@
 
 ---
 <div align="center">
-  <p>
-    <strong>Agentic Document-Oriented Reasoning and Explanation Assistant – X</strong>
-  </p>
   <img src="assets/logo.png" alt="DOREA-X Logo" width="800"/>
-  <p>
-    <strong>AI와 함께 문서를 쓰고, 검토하고, 완성하는 공간</strong>
-  </p>
   <p>
     <img alt="License" src="https://img.shields.io/badge/license-Apache%202.0-blue.svg">
     <img alt="Docker" src="https://img.shields.io/badge/docker-%230db7ed.svg?logo=docker&logoColor=white">
