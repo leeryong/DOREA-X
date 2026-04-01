@@ -1,4 +1,3 @@
-# **DOREA-X**
 <div align="center">
   <img src="assets/logo.png" alt="DOREA-X Logo" width="800"/>
   <p>
