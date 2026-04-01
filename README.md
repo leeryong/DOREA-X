@@ -92,8 +92,11 @@
 </table>
 
 ---
+
 ## 📞 기술 상담/문의
 - 이용 (ryonglee@kisti.re.kr)
+
+---
 
 ## 👨‍💻 개발자 그룹
 - 이용 (ryonglee@kisti.re.kr)
