@@ -36,12 +36,12 @@
 
 ## 🚀 주요 기능
 
-- **사용자 맞춤형 페르소나 설정** — 역할과 목표에 최적화된 에이전트로 나만의 맞춤형 동료 구축
-- **문서 기반 지능형 상호작용** — PDF/HWP의 구조를 파악하고 문서 내용에 기반한 논리적 분석 및 대화
-- **문서 작성 협업** — 기획·초안 구상부터 최종 완성까지 문서 작성 전 과정을 함께 보조
-- **맥락을 이어가는 작업 메모리** — 대화 내역과 관련 문서를 프로젝트 단위로 관리하여 연속성 있는 작업 환경 제공
-- **자율적인 도구 및 스킬 활용** — 검색, 웹 API(MCP) 등 필요한 도구를 스스로 선택하여 문제 해결
-- **멀티모달 문서 이해** — 텍스트, 표, 이미지가 포함된 비정형 문서의 통합적 이해 및 분석
+- **에이전트 페르소나 설정**: 역할과 목표에 최적화된 에이전트로 나만의 맞춤형 동료 구축
+- **문서 기반 지능형 상호작용**: PDF/HWP/Office문서의 구조를 파악하고 문서 내용에 기반한 논리적 분석 및 대화
+- **문서 작성 협업**: 기획과 초안 구상부터 최종 완성까지 문서 작성 전 과정을 함께 보조
+- **맥락을 이어가는 작업 메모리**: 대화 내역과 관련 문서를 프로젝트 단위로 관리하여 연속성 있는 작업 환경 제공
+- **자율적인 도구 및 스킬 활용**: 검색, 웹 API(MCP) 등 필요한 도구를 스스로 선택하여 문제 해결
+- **멀티모달 문서 이해**: 텍스트, 표, 이미지가 포함된 비정형 문서의 통합적 이해 및 분석
 
 <table>
 <tr>
@@ -97,22 +97,18 @@
 ---
 
 ## 개발자
-- 이용 (Lee.Ryong@gmail.com)
+- 이용 (Lee.Ryong@gmail.com), <-- 상담
 - 장래영 (raezero@kisti.re.kr)
 - 구자현 (jahyeongu@kisti.re.kr)
 
 ---
 
 
-## 📚 기술 스택 및 라이선스
-
-
-| 이름 | 용도 | 라이선스 |
-| :--- | :--- | :--- |
-| **[OpenDataLoader](https://github.com/opendataloader-project)** | 데이터 추출 및 전처리 파이프라인 | Apache-2.0 |
-| **[Docling](https://github.com/DS4SD/docling)** | 고성능 문서 파싱 및 구조 분석 | MIT |
-| **[Huridocs](https://github.com/huridocs/pdf-document-layout-analysis)** | PDF 레이아웃 분석 및 영역 분할 | Apache-2.0 |
-| **[Ollama](https://github.com/ollama/ollama)** | 로컬 환경 언어 모델 실행 인프라 | MIT |
-| **[Mem0](https://github.com/mem0ai/mem0)** | LLM용 지능형 개인화 작업 메모리 레이어 | Apache-2.0 |
-| **[ChromaDB](https://github.com/chroma-core/chroma)** | AI 벡터 데이터베이스 및 검색 | Apache-2.0 |
-| **[MarkItDown](https://github.com/microsoft/markitdown)** | 다양한 포맷의 문서를 Markdown으로 변환 | MIT |
+## 📚 활용 공개 소스
+- [OpenDataLoader](https://github.com/opendataloader-project)
+- [Docling](https://github.com/DS4SD/docling)
+- [Huridocs](https://github.com/huridocs/pdf-document-layout-analysis)
+- [Ollama](https://github.com/ollama/ollama)
+- [Mem0](https://github.com/mem0ai/mem0)
+- [ChromaDB](https://github.com/chroma-core/chroma)
+- [MarkItDown](https://github.com/microsoft/markitdown)
