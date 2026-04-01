@@ -1,7 +1,7 @@
 # **DOREA-X**
-**Document-Oriented Reasoning and Explanation Assistant – X **
+Document-Oriented Reasoning and Explanation Assistant – X
 
-> ** 늘어가는 문서작업을 도와주는 AI 에이전트 시스템 **
+ ** 늘어가는 문서작업을 도와주는 AI 에이전트 시스템 **
 
 ---
 <div align="center">
