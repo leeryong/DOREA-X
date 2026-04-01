@@ -10,7 +10,7 @@
 
 ---
 
-## 🔎 Overview
+## 🔎 개요
 
 **DOREA(Document-Oriented Reasoning and Explanation Assistant)–X**
 
