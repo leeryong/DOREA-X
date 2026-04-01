@@ -17,10 +17,10 @@
 
 ## 🔎 Overview
 
-- 문서 작업 AI 에이전트: 문서 관리·전처리·대화·검색(RAG)·보고서 작성까지 모든 문서 작업을 하나의 에이전트가 수행
-- 함께 일하는 AI 동료: 단순 명령 수행을 넘어, 사용자의 흐름을 이해하고 함께 고민하며 협업하는 동료
-- 현장 즉시 투입 가능한 전문가: 복잡한 설정 없이 연구·행정·교육 등 다양한 현업 업무에 바로 적용 가능
-- 유연한 맞춤형 실무자: 특정 서비스에 종속되지 않고 필요에 따라 자율적으로 기능 확장
+- **문서 작업 AI 에이전트**: 문서 관리·전처리·대화·검색(RAG)·보고서 작성까지 모든 문서 작업을 하나의 에이전트가 수행
+- **함께 일하는 AI 동료**: 단순 명령 수행을 넘어, 사용자의 흐름을 이해하고 함께 고민하며 협업하는 동료
+- **현장 즉시 투입 가능한 전문가**: 복잡한 설정 없이 연구·행정·교육 등 다양한 현업 업무에 바로 적용 가능
+- **유연한 맞춤형 실무자**: 특정 서비스에 종속되지 않고 필요에 따라 자율적으로 기능 확장
 
 <div align="center">
 
@@ -28,7 +28,7 @@
 
 [![DOREA-X 시연 영상](assets/img0.png)](https://youtu.be/55nMhZY7XBs)
 
-*음성: Generated using ElevenLabs (https://elevenlabs.io)*
+*음성: generated using ElevenLabs (https://elevenlabs.io)*
 
 </div>
 
@@ -47,7 +47,7 @@
 <tr>
 <td width="50%" align="center">
 
-### 🤝 함께 작업하는 에이전트
+### 🤝 문서 이해, 분석, 작성을 함께하는  에이전트
 <img src="assets/img1.png" alt="Collaboration" width="400"/>
 
 <div align="left">
@@ -58,7 +58,7 @@
 </td>
 <td width="50%" align="center">
 
-### 🧠 맥락을 기억하는 에이전트
+### 🧠 대화와 작업의 맥락을 이해하는 에이전트
 <img src="assets/img2.png" alt="Memory" width="400"/>
 
 <div align="left">
