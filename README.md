@@ -96,7 +96,7 @@
 - 이용 (Lee.Ryong@gmail.com)
 
 ## 👨‍💻 개발자 그룹
-- 이용 (Lee.Ryong@gmail.com), <-- 상담
+- 이용 (Lee.Ryong@gmail.com)
 - 장래영 (raezero@kisti.re.kr)
 - 구자현 (jahyeongu@kisti.re.kr)
 
