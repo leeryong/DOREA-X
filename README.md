@@ -47,7 +47,7 @@
 <tr>
 <td width="50%" align="center">
 
-### 🤝 문서 이해, 분석, 작성을 함께하는  에이전트
+### 🤝 문서 이해와 분석을 도와주는 에이전트
 <img src="assets/img1.png" alt="Collaboration" width="400"/>
 
 <div align="left">
