@@ -28,6 +28,9 @@
 
 [![DOREA-X 시연 영상](assets/img0.png)](https://youtu.be/55nMhZY7XBs)
 
+[![DOREA-X 시연 영상](https://img.youtube.com/vi/VIDEO_ID/0.jpg)]([https://www.youtube.com/watch?v=VIDEO_ID](https://youtu.be/55nMhZY7XBs))
+
+
 *이미지를 클릭하면 시연 영상으로 연결됩니다.*  
 *음성: Generated using ElevenLabs (https://elevenlabs.io)*
 
