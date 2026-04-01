@@ -92,6 +92,8 @@
 </table>
 
 ---
+## 기술 상담/문의
+- 이용 (Lee.Ryong@gmail.com)
 
 ## 👨‍💻 개발자 그룹
 - 이용 (Lee.Ryong@gmail.com), <-- 상담
