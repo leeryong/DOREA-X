@@ -13,6 +13,7 @@
 ## 🔎 Overview
 
 **DOREA(Document-Oriented Reasoning and Explanation Assistant)–X**
+
  **늘어가는 문서작업을 도와주는 AI 에이전트 시스템**
 
 - **문서 작업 AI 에이전트**: 문서 관리·전처리·대화·검색(RAG)·보고서 작성까지 모든 문서 작업을 하나의 에이전트가 수행
