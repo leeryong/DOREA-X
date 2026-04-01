@@ -25,11 +25,6 @@
 ### 📺 시연 영상 (클릭하여 보기)
 [![DOREA-X 시연 영상](assets/img0.png)](https://youtu.be/55nMhZY7XBs)
 
-<a href="https://youtu.be/55nMhZY7XBs" taget="_">
-  <img src="assets/img0.png" width="600"/>
-</a>
-<p><i>※ 클릭 시 YouTube로 이동합니다</i></p>
-
 *음성: generated using ElevenLabs (https://elevenlabs.io)*
 
 </div>
