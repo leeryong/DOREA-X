@@ -1,9 +1,4 @@
 # **DOREA-X**
-Document-Oriented Reasoning and Explanation Assistant – X
-
- **늘어가는 문서작업을 도와주는 AI 에이전트 시스템**
-
----
 <div align="center">
   <img src="assets/logo.png" alt="DOREA-X Logo" width="800"/>
   <p>
@@ -16,6 +11,9 @@ Document-Oriented Reasoning and Explanation Assistant – X
 ---
 
 ## 🔎 Overview
+
+**DOREA(Document-Oriented Reasoning and Explanation Assistant)–X**
+ **늘어가는 문서작업을 도와주는 AI 에이전트 시스템**
 
 - **문서 작업 AI 에이전트**: 문서 관리·전처리·대화·검색(RAG)·보고서 작성까지 모든 문서 작업을 하나의 에이전트가 수행
 - **함께 일하는 AI 동료**: 단순 명령 수행을 넘어, 사용자의 흐름을 이해하고 함께 고민하며 협업하는 동료
