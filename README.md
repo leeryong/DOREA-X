@@ -55,6 +55,17 @@
 </td>
 <td width="50%" align="center">
 
+### 🛠️ 스스로 도구를 활용하는 에이전트
+<img src="assets/img3.png" alt="Skills" width="400"/>
+
+<div align="left">
+• 웹 검색, 코드 실행 등 도구 자율 선택<br>
+• 사용자 개입 없이 최적의 해결 방법 도출
+</div>
+
+</td>
+<td width="50%" align="center">
+
 ### 🧠 대화와 작업의 맥락을 이해하는 에이전트
 <img src="assets/img2.png" alt="Memory" width="400"/>
 
@@ -68,16 +79,6 @@
 <tr>
 <td width="50%" align="center">
 
-### 🛠️ 스스로 도구를 활용하는 에이전트
-<img src="assets/img3.png" alt="Skills" width="400"/>
-
-<div align="left">
-• 웹 검색, 코드 실행 등 도구 자율 선택<br>
-• 사용자 개입 없이 최적의 해결 방법 도출
-</div>
-
-</td>
-<td width="50%" align="center">
 
 ### ✍️ 문서를 작성하는 에이전트
 <img src="assets/img4.png" alt="Co-Authoring" width="400"/>
