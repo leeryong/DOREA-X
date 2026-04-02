@@ -39,10 +39,9 @@
 - **맥락을 이어가는 작업 메모리**: 대화 내역과 관련 문서를 프로젝트 단위로 관리하여 연속성 있는 작업 환경 제공
 - **자율적인 도구 및 스킬 활용**: 문서처리/분석, 웹 검색 등 필요한 도구(MCP/SKILL)를 스스로 선택하여 문제 해결
 - **멀티모달 문서 이해**: 텍스트, 표, 이미지가 포함된 비정형 문서의 통합적 이해 및 분석
-
 <table>
-<tr>
-<td width="50%" align="center">
+  <tr>
+    <td width="50%" align="center">
 
 ### 🤝 문서 이해와 분석을 도와주는 에이전트
 <img src="assets/img1.png" alt="Collaboration" width="400"/>
@@ -52,8 +51,8 @@
 • 문서 작성부터 편집까지 단일 공간에서 제공
 </div>
 
-</td>
-<td width="50%" align="center">
+    </td>
+    <td width="50%" align="center">
 
 ### 🛠️ 스스로 도구를 활용하는 에이전트
 <img src="assets/img3.png" alt="Skills" width="400"/>
@@ -63,8 +62,10 @@
 • 사용자 개입 없이 최적의 해결 방법 도출
 </div>
 
-</td>
-<td width="50%" align="center">
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center">
 
 ### 🧠 대화와 작업의 맥락을 이해하는 에이전트
 <img src="assets/img2.png" alt="Memory" width="400"/>
@@ -74,11 +75,8 @@
 • 이전 맥락 반영하여 불필요한 재설명 생략
 </div>
 
-</td>
-</tr>
-<tr>
-<td width="50%" align="center">
-
+    </td>
+    <td width="50%" align="center">
 
 ### ✍️ 문서를 작성하는 에이전트
 <img src="assets/img4.png" alt="Co-Authoring" width="400"/>
@@ -88,8 +86,8 @@
 • 초안 작성부터 최종 검토까지 전 과정 지원
 </div>
 
-</td>
-</tr>
+    </td>
+  </tr>
 </table>
 
 ---
