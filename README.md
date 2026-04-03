@@ -25,6 +25,11 @@
 ### 📺 시연 영상 (클릭하여 보기)
 [![DOREA-X 시연 영상](assets/img0.png)](https://www.youtube.com/watch?v=YuG6EbST2LY)
 
+<a href="https://www.youtube.com/watch?v=YuG6EbST2LY">
+  <img src="assets/img0.png" alt="DOREA-X 시연 영상"
+       style="border: 2px solid black; border-radius: 6px;" />
+</a>
+
 
 </div>
 
