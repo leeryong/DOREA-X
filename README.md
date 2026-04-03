@@ -27,9 +27,11 @@
 <a href="https://www.youtube.com/watch?v=YuG6EbST2LY">
   <img src="DOREA-X-Screenshot_Main.png"
        alt="DOREA-X 시연 영상"
-       width="80%"
+       width="90%"
        style="border: 1.5px solid #333; border-radius: 8px; box-shadow: 0 3px 8px rgba(0,0,0,0.25);" />
 </a>
+
+</div>
 
 ---
 
