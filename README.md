@@ -23,7 +23,7 @@
 <div align="center">
 
 ### 📺 시연 영상 (클릭하여 보기)
-[![DOREA-X 시연 영상](assets/img0.png)](https://youtu.be/55nMhZY7XBs)
+[![DOREA-X 시연 영상](assets/img0.png)](https://www.youtube.com/watch?v=YuG6EbST2LY)
 
 
 </div>
