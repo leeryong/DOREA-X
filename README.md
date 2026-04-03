@@ -24,11 +24,12 @@
 
 ### 📺 시연 영상 (클릭하여 보기)
 
-<div style="display: inline-block; padding: 4px; border: 2px solid black; border-radius: 8px;">
-  <a href="https://www.youtube.com/watch?v=YuG6EbST2LY">
-    <img src="assets/img0.png" alt="DOREA-X 시연 영상" />
-  </a>
-</div>
+<a href="https://www.youtube.com/watch?v=YuG6EbST2LY">
+  <img src="assets/img0.png"
+       alt="DOREA-X 시연 영상"
+       width="80%"
+       style="border: 1.5px solid #333; border-radius: 8px; box-shadow: 0 3px 8px rgba(0,0,0,0.25);" />
+</a>
 
 ---
 
