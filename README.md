@@ -11,7 +11,7 @@
 
 ## 🔎 개요
 
-### **DOREA(Document-Oriented Reasoning and Explanation Assistant)–X**
+### **DOREA–X (Document-Oriented Reasoning and Explanation Assistant - X)**
 
  **문서 이해부터 보고서 작성까지 전 과정을 지원하는 AI 에이전트**
 
