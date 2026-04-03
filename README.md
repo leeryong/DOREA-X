@@ -26,10 +26,9 @@
 [![DOREA-X 시연 영상](assets/img0.png)](https://www.youtube.com/watch?v=YuG6EbST2LY)
 
 <a href="https://www.youtube.com/watch?v=YuG6EbST2LY">
-  <img src="assets/img0.png" alt="DOREA-X 시연 영상"
-       style="border: 2px solid black; border-radius: 6px;" />
+  <img src="assets/img0.png"
+       style="border: 1.5px solid #333; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);" />
 </a>
-
 
 </div>
 
