@@ -24,7 +24,7 @@
 
 ### 📺 시연 영상 (클릭하여 보기)
 <a href="https://www.youtube.com/watch?v=YuG6EbST2LY">
-  <img src="assets/img0.png"
+  <img src="DOREA-X-Screenshot_Main.png"
        style="border: 1.5px solid #333; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);" />
 </a>
 
