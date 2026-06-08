@@ -1,3 +1,9 @@
+<div align="right">
+
+**한국어** | [English](README.en.md)
+
+</div>
+
 <div align="center">
   <img src="main_figure.jpg" alt="DOREA-X Logo" width="800"/>
   <p>
