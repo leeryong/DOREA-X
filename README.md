@@ -33,23 +33,11 @@
 
 </div>
 
-<table>
-<tr>
-<td>
+  ## 🌐 공개판 DOREA-XP
 
-  ### 🌐 공개판 DOREA-XP
+  연구·교육·업무 현장에서 누구나 받아 직접 사용할 수 있도록 핵심 기능을 정리한 공개판을 제공합니다.
 
-  **누구나 받아 노트북에서 바로 실행할 수 있는 공개판이 별도 폴더에 있습니다.**
-
-  ➡️ **[DOREA-XP 폴더로 이동](DOREA-XP/)**
-
-  - Docker만 있으면 `./install/install.sh` 한 줄로 설치
-  - 사내망·일반 노트북·CPU 환경 모두 지원
-  - 자세한 비교는 [DOREA-XP/README.md](DOREA-XP/README.md) 참고
-
-</td>
-</tr>
-</table>
+  ➡️ **[DOREA-XP 바로가기](DOREA-XP/)** — Docker만 설치돼 있으면 `./install/install.sh` 한 줄로 설치
 
 ---
 
