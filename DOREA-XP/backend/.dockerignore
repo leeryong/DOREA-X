@@ -1,0 +1,37 @@
+# backend Docker build context — exclude rubbish, KEEP host .so files.
+#
+# 주의: 호스트의 backend/src/services/*.so 는 보호된 모듈 그 자체다.
+#       이미지 안에 들어가야 동작하므로 *.so 를 ignore 하면 안 된다.
+#       cython 빌더 단계는 더 이상 사용하지 않으므로 .so 의 출처는 호스트뿐.
+
+# Caches / build artifacts (must NOT be in image)
+**/*.pyc
+**/*.pyo
+**/__pycache__
+**/.pytest_cache
+**/.mypy_cache
+**/.ruff_cache
+
+# Tests / coverage (dev-only)
+tests/
+**/tests/
+**/conftest.py
+**/test_*.py
+**/*_test.py
+.coverage
+htmlcov/
+
+# Cythonize 헬퍼는 이미지에 안 들어가도 됨
+cythonize_backend.py
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# Secrets
+.env
+.env.*.bak

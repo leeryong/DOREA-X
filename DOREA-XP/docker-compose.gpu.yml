@@ -1,0 +1,23 @@
+services:
+  backend:
+    environment:
+      - SIDECAR_COMPOSE_MODE=${SIDECAR_COMPOSE_MODE:-gpu}
+
+  ollama:
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+      - NVIDIA_DRIVER_CAPABILITIES=compute,utility
+    gpus: all
+    runtime: nvidia
+
+  opendataloader:
+    image: dorea-xp-opendataloader:gpu
+    build:
+      context: ./opendataloader-service
+      dockerfile: Dockerfile.gpu
+    environment:
+      - PYTHONUNBUFFERED=1
+      - NVIDIA_VISIBLE_DEVICES=all
+      - NVIDIA_DRIVER_CAPABILITIES=compute,utility
+    gpus: all
+    runtime: nvidia

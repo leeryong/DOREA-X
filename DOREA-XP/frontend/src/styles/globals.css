@@ -1,0 +1,291 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@plugin "@tailwindcss/typography";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+:root {
+  --radius: 0.625rem;
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.141 0.005 285.823);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.141 0.005 285.823);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.141 0.005 285.823);
+  --primary: oklch(0.723 0.219 149.579);
+  --primary-foreground: oklch(0.982 0.018 155.826);
+  --secondary: oklch(0.967 0.001 286.375);
+  --secondary-foreground: oklch(0.21 0.006 285.885);
+  --muted: oklch(0.967 0.001 286.375);
+  --muted-foreground: oklch(0.552 0.016 285.938);
+  --accent: oklch(0.967 0.001 286.375);
+  --accent-foreground: oklch(0.21 0.006 285.885);
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: oklch(0.92 0.004 286.32);
+  --input: oklch(0.92 0.004 286.32);
+  --ring: oklch(0.723 0.219 149.579);
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.141 0.005 285.823);
+  --sidebar-primary: oklch(0.723 0.219 149.579);
+  --sidebar-primary-foreground: oklch(0.982 0.018 155.826);
+  --sidebar-accent: oklch(0.967 0.001 286.375);
+  --sidebar-accent-foreground: oklch(0.21 0.006 285.885);
+  --sidebar-border: oklch(0.92 0.004 286.32);
+  --sidebar-ring: oklch(0.723 0.219 149.579);
+}
+
+.dark {
+  --background: oklch(0.141 0.005 285.823);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.21 0.006 285.885);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.21 0.006 285.885);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.696 0.17 162.48);
+  --primary-foreground: oklch(0.393 0.095 152.535);
+  --secondary: oklch(0.274 0.006 286.033);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.274 0.006 286.033);
+  --muted-foreground: oklch(0.705 0.015 286.067);
+  --accent: oklch(0.274 0.006 286.033);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.527 0.154 150.069);
+  --chart-1: oklch(0.488 0.243 264.376);
+  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-3: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-5: oklch(0.645 0.246 16.439);
+  --sidebar: oklch(0.21 0.006 285.885);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.696 0.17 162.48);
+  --sidebar-primary-foreground: oklch(0.393 0.095 152.535);
+  --sidebar-accent: oklch(0.274 0.006 286.033);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: oklch(0.527 0.154 150.069);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Legacy class compatibility (temporary): keep UI readable while refactoring to pure shadcn components */
+@layer components {
+  /* Auth / generic form */
+  .container { @apply min-h-svh w-full bg-background px-6 py-10 flex items-center justify-center; }
+  .card { @apply w-full max-w-md rounded-xl border bg-card text-card-foreground shadow-sm p-8; }
+  .brand { @apply flex justify-center mb-6; }
+  .brandSub { @apply text-sm text-muted-foreground text-center mt-2; }
+  .form { @apply space-y-4; }
+  .formGroup { @apply space-y-2; }
+  .label { @apply text-sm font-medium text-foreground; }
+  .input { @apply w-full h-10 rounded-md border border-input bg-background px-3 py-2 text-sm; @apply placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring; }
+  .input:disabled { @apply opacity-60 cursor-not-allowed; }
+  .inputHint { @apply text-xs text-muted-foreground; }
+  .inputError { @apply text-xs text-destructive; }
+  .error { @apply rounded-md border border-destructive/30 bg-destructive/10 text-destructive px-3 py-2 text-sm; }
+  .actions { @apply flex gap-2 pt-2; }
+
+  .btn { @apply inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors; @apply h-10 px-4 py-2; @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50; }
+  .btnPrimary { @apply bg-primary text-primary-foreground hover:bg-primary/90; }
+  .btnSecondary { @apply bg-secondary text-secondary-foreground hover:bg-secondary/80; }
+  .btnOutline { @apply border border-input bg-background hover:bg-accent hover:text-accent-foreground; }
+  .btnSmall { @apply h-9 px-3 text-sm; }
+  .btn-link { @apply text-primary underline-offset-4 hover:underline text-sm; }
+
+  /* App shell layout */
+  .shell-container { @apply h-svh flex flex-col bg-background; }
+  .shell-header { @apply h-14 flex items-center justify-between gap-3 border-b px-4; }
+  .shell-brand { @apply font-semibold tracking-tight; }
+  .shell-ai-model-badge { @apply hidden md:flex items-center gap-2 rounded-full border bg-muted px-3 py-1 text-xs text-muted-foreground; }
+  .ai-model-indicator.configured { @apply text-emerald-500; }
+  .ai-model-indicator.not-configured { @apply text-amber-500; }
+  .ai-model-name { @apply max-w-[220px] truncate text-foreground font-medium; }
+  .shell-header-actions { @apply flex items-center gap-2; }
+  .shell-header-btn { @apply inline-flex items-center rounded-md border bg-background px-3 py-2 text-sm hover:bg-accent; }
+  .shell-header-btn.danger { @apply border-destructive/30 text-destructive hover:bg-destructive/10; }
+
+  .shell-body { @apply flex flex-1 overflow-hidden; }
+  .shell-panel-left { @apply w-[320px] flex-none border-r bg-background flex flex-col; }
+  .shell-nav-tabs { @apply grid grid-cols-2 gap-1 p-2 border-b; }
+  .shell-nav-tab { @apply rounded-md px-3 py-2 text-sm font-medium text-muted-foreground hover:bg-accent hover:text-accent-foreground; }
+  .shell-nav-tab.active { @apply bg-accent text-accent-foreground; }
+  .shell-panel-content { @apply flex-1 min-h-0 flex flex-col; }
+  .shell-list-container { @apply p-3 flex flex-col gap-3 min-h-0 flex-1; }
+  .shell-full-width-btn { @apply w-full; }
+  .shell-empty-state { @apply text-sm text-muted-foreground py-6 text-center; }
+
+  .shell-file-list { @apply flex-1 min-h-0 overflow-auto space-y-1; }
+  .shell-file-item { @apply flex items-center gap-2 rounded-md px-2 py-2 text-sm hover:bg-accent cursor-pointer; }
+  .shell-file-item.active { @apply bg-accent; }
+  .file-name { @apply flex-1 truncate; }
+  .file-status { @apply text-xs text-muted-foreground; }
+  .file-delete-btn { @apply text-muted-foreground hover:text-destructive p-1 rounded-md hover:bg-accent; }
+
+  .shell-session-list { @apply flex-1 min-h-0 overflow-auto space-y-1; }
+  .shell-session-item { @apply flex items-center gap-2 rounded-md px-2 py-2 text-sm hover:bg-accent cursor-pointer; }
+  .shell-session-item.active { @apply bg-accent; }
+  .session-name { @apply flex-1 truncate; }
+  .session-actions { @apply flex items-center gap-1; }
+  .action-icon { @apply text-muted-foreground hover:text-foreground p-1 rounded-md hover:bg-accent; }
+  .action-icon.danger { @apply hover:text-destructive; }
+
+  .shell-panel-center { @apply flex-1 min-w-0 bg-muted/20; }
+  .shell-viewer-empty { @apply h-full w-full flex items-center justify-center text-sm text-muted-foreground; }
+
+  .shell-panel-right { @apply w-[420px] flex-none border-l bg-background flex flex-col; }
+  .shell-right-header { @apply px-3 py-2 border-b; }
+  .chat-header-info { @apply flex gap-3 text-xs text-muted-foreground; }
+  .chat-header-placeholder { @apply italic; }
+
+  .shell-chat-area { @apply flex-1 min-h-0 flex flex-col; }
+  .shell-messages { @apply flex-1 min-h-0 overflow-auto p-4 space-y-3 bg-background; }
+  .shell-message-row { @apply flex; }
+  .shell-message-row.user { @apply justify-end; }
+  .shell-message-row.ai { @apply justify-start; }
+  .message-bubble { @apply max-w-[85%] rounded-lg px-3 py-2 text-sm leading-relaxed; }
+  .shell-message-row.user .message-bubble { @apply bg-primary text-primary-foreground; }
+  .shell-message-row.ai .message-bubble { @apply bg-muted text-foreground; }
+  .message-context { @apply text-xs opacity-80 mb-1; }
+  .message-context.clickable { @apply cursor-pointer rounded-md px-2 py-1 hover:bg-black/5; }
+
+  .shell-input-area { @apply border-t p-3; }
+  .shell-input-wrapper { @apply flex items-center gap-2 rounded-xl border bg-muted/40 p-2; }
+  .shell-chat-input { @apply flex-1 bg-transparent px-2 text-sm outline-none; }
+  .shell-send-btn { @apply h-9 w-9 rounded-full bg-primary text-primary-foreground hover:bg-primary/90 disabled:opacity-50 flex items-center justify-center; }
+
+  /* PDF viewer */
+  .pdf-viewer-empty { @apply h-full w-full flex items-center justify-center text-sm text-muted-foreground; }
+  .pdf-viewer-container { @apply h-full w-full flex flex-col; }
+  .pdf-toolbar { @apply sticky top-0 z-10 flex items-center justify-between gap-2 border-b bg-background px-3 py-2; }
+  .pdf-toolbar-group { @apply flex items-center gap-2; }
+  .pdf-btn { @apply inline-flex h-9 w-9 items-center justify-center rounded-md border bg-background text-sm hover:bg-accent disabled:opacity-50; }
+  .pdf-page-indicator { @apply text-xs text-muted-foreground tabular-nums; }
+  .pdf-select { @apply h-9 rounded-md border bg-background px-2 text-sm; }
+  .pdf-page-wrapper { @apply relative flex-1 overflow-auto bg-muted p-4 flex flex-col items-center gap-8; }
+  .pdf-page { @apply relative bg-white shadow-md; }
+  .pdf-canvas { @apply block; }
+  .pdf-loading-overlay { @apply absolute inset-0 flex flex-col items-center justify-center bg-background/80 text-sm text-muted-foreground; }
+  .pdf-error-overlay { @apply absolute inset-0 flex items-center justify-center bg-destructive/10 text-destructive text-sm; }
+
+  /* Modals */
+  .modalBackdrop { @apply fixed inset-0 z-50 bg-black/50 flex justify-center items-start px-4 py-10; }
+  .modal { @apply w-full max-w-2xl rounded-xl border bg-background shadow-xl p-6; }
+  .modal.settings-modal { @apply max-w-5xl; }
+  .modalHeader { @apply flex items-center justify-between gap-3 border-b pb-3 mb-4; }
+  .modalTitle { @apply text-lg font-semibold; }
+  .iconBtn { @apply inline-flex h-9 w-9 items-center justify-center rounded-md border bg-background hover:bg-accent; }
+  .settings-content { @apply min-h-0; }
+}
+
+/* Segment overlay needs real CSS positioning */
+.segment-overlay {
+  position: absolute;
+
+  /* Theme-aware highlight (follows --primary / data-accent) */
+  border: 2px solid color-mix(in oklch, var(--primary) 65%, transparent);
+  background: color-mix(in oklch, var(--primary) 10%, transparent);
+
+  cursor: pointer;
+  z-index: 2;
+}
+.segment-overlay.selected {
+  border-color: #B91C1C;
+  background: rgba(185, 28, 28, 0.18);
+  z-index: 3;
+}
+
+/* Toast UI Editor: WYSIWYG mode — hide mode switch gap (hideModeSwitch:true already hides tabs,
+   but the 36px footer gap remains per nhn/tui.editor#2425). Also hide leftover markdown panes. */
+.dorea-toast-editor .toastui-editor-md-tab-container,
+.dorea-toast-editor .toastui-editor-tabs,
+.dorea-toast-editor .toastui-editor-mode-switch {
+  display: none !important;
+}
+
+.dorea-toast-editor .toastui-editor-md-preview,
+.dorea-toast-editor .toastui-editor-md-splitter {
+  display: none !important;
+}
+
+/* Fix the 36px footer gap left by hideModeSwitch (editor calculates height minus tab bar) */
+.dorea-toast-editor .toastui-editor-defaultUI .toastui-editor-main .toastui-editor-md-container,
+.dorea-toast-editor .toastui-editor-defaultUI .toastui-editor-main .toastui-editor-ww-container {
+  height: 100% !important;
+}
+
+.dorea-toast-editor .toastui-editor-defaultUI-toolbar {
+  border-top-left-radius: 6px;
+}
+
+/* Hide scrollbar but keep scroll functionality */
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+/* Toast UI Editor — increase content font size by 1 step */
+.dorea-toast-editor .toastui-editor-contents,
+.dorea-toast-editor .ProseMirror,
+.dorea-toast-editor .toastui-editor-md-container .toastui-editor-md-preview,
+.dorea-toast-editor .toastui-editor-ww-container {
+  font-size: 1rem; /* 16px — one step up from default 14px */
+  line-height: 1.75;
+}

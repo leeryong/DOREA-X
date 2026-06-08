@@ -1,0 +1,137 @@
+services:
+  backend:
+    image: dorea-xp-backend:latest
+    build: ./backend
+    # Cython 난독화된 .so 가 x86-64 ELF 라서 모든 호스트에서 amd64 컨테이너로 통일.
+    # Apple Silicon Mac 에서는 Rosetta 2 로 emulate 되어 동작한다 (다소 느림).
+    platform: linux/amd64
+    volumes:
+      - ./DATABASE:/app/DATABASE
+      - ./config:/app/config
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./:/workspace:ro
+    environment:
+      - TZ=Asia/Seoul
+      - APP_NAME=${APP_NAME:-DOREA-XP (공개용)}
+      - ENVIRONMENT=${ENVIRONMENT:-development}
+      - DB_PATH=/app/DATABASE/dorea.db
+      - CHROMA_PATH=/app/DATABASE/chroma
+      - JWT_SECRET_KEY=${JWT_SECRET_KEY:-your-super-secret-key-change-in-production}
+      - ADMIN_INITIAL_PASSWORD=${ADMIN_INITIAL_PASSWORD}
+      - OLLAMA_URL=${OLLAMA_URL:-http://ollama:11434}
+      - CONVERTER_URL=${CONVERTER_URL:-http://document-converter:8003}
+      - OPENDATALOADER_URL=${OPENDATALOADER_URL:-http://opendataloader:8005}
+      - MCP_SERVICE_URL=${MCP_SERVICE_URL:-http://dorea-xp-mcp-service:8002}
+      - FRONTEND_URL=${FRONTEND_URL:-http://localhost:8000}
+      - MAX_FILE_SIZE=${MAX_FILE_SIZE:-524288000}
+      - MAX_CONCURRENT_ANALYSIS=${MAX_CONCURRENT_ANALYSIS:-2}
+      - AUTO_START_SIDECARS=${AUTO_START_SIDECARS:-true}
+      - SIDECAR_COMPOSE_PROJECT_NAME=${COMPOSE_PROJECT_NAME:-dorea-xp}
+      - SIDECAR_COMPOSE_PROJECT_DIR=/workspace
+      - SIDECAR_COMPOSE_MODE=${SIDECAR_COMPOSE_MODE:-auto}
+      - SIDECAR_START_TIMEOUT_SECONDS=${SIDECAR_START_TIMEOUT_SECONDS:-300}
+      - SIDECAR_HEALTH_RETRY_INTERVAL_SECONDS=${SIDECAR_HEALTH_RETRY_INTERVAL_SECONDS:-2}
+    networks:
+      - app-network
+    restart: unless-stopped
+
+  frontend:
+    image: dorea-xp-frontend:latest
+    build:
+      context: ./frontend
+      args:
+        VITE_RHWP_STUDIO_URL: ${VITE_RHWP_STUDIO_URL:-/rhwp/}
+    ports:
+      - "8000:80"
+    depends_on:
+      backend:
+        condition: service_started
+      rhwp-service:
+        condition: service_healthy
+    networks:
+      - app-network
+    restart: unless-stopped
+
+  rhwp-service:
+    image: dorea-xp-rhwp-service:latest
+    build: ./rhwp-service
+    container_name: dorea-xp-rhwp-service
+    environment:
+      - PORT=7700
+    networks:
+      - app-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:7700/rhwp/').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  document-converter:
+    image: dorea-xp-document-converter:latest
+    build: ./document-converter
+    ports:
+      - "8003:8003"
+    volumes:
+      - ./DATABASE/files:/app/files:rw
+      - ./document-converter/fonts:/app/fonts:ro
+    environment:
+      - PYTHONUNBUFFERED=1
+      - HOME=/tmp
+      - MAX_FILE_SIZE=${MAX_FILE_SIZE:-524288000}
+    networks:
+      - app-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8003/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  ollama:
+    image: ollama/ollama
+    ports:
+      - "11434:11434"
+    volumes:
+      - ./MODEL/Ollama:/root/.ollama
+    networks:
+      - app-network
+    restart: unless-stopped
+
+  mcp-service:
+    image: dorea-xp-mcp-service:latest
+    build: ./mcp-service
+    container_name: dorea-xp-mcp-service
+    environment:
+      - PYTHONUNBUFFERED=1
+      - MCP_SERVICE_PORT=8002
+    networks:
+      - app-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8002/health')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  opendataloader:
+    image: dorea-xp-opendataloader:cpu
+    build: ./opendataloader-service
+    profiles:
+      - analyzer-opendataloader
+    ports:
+      - "8005:8005"
+    environment:
+      - PYTHONUNBUFFERED=1
+    networks:
+      - app-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8005/health', timeout=5)"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+networks:
+  app-network:
+    driver: bridge

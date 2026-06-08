@@ -1,0 +1,15 @@
+# macOS Apple Silicon override
+# 호스트에서 별도 설치한 Ollama (https://ollama.com) 를 사용해 Metal GPU를 활용한다.
+# install.sh 가 호스트 Ollama (localhost:11434) 응답을 감지하면 자동으로 이 override를 함께 사용한다.
+
+services:
+  backend:
+    environment:
+      - OLLAMA_URL=http://host.docker.internal:11434
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+  # 컨테이너 내 Ollama 서비스는 가동하지 않는다 (호스트로 위임)
+  ollama:
+    profiles:
+      - disabled

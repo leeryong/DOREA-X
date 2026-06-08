@@ -1,0 +1,41 @@
+diff --git a/rhwp-studio/src/main.ts b/rhwp-studio/src/main.ts
+index 6b56891..3f1a2ab 100644
+--- a/rhwp-studio/src/main.ts
++++ b/rhwp-studio/src/main.ts
+@@ -733,6 +733,36 @@ window.addEventListener('message', async (e) => {
+         await initPromise;
+         reply(JSON.parse(wasm.exportHwpVerify()));
+         break;
++      case 'insertText': {
++        // DOREA-XP minimal extension: append `text` as new paragraph(s) at the
++        // end of section `sec` (default 0). `\n` splits text into separate
++        // document paragraphs so multi-line chat input renders correctly.
++        // This is the ONLY postMessage method DOREA-XP adds on top of upstream
++        // rhwp — keep this case self-contained, no helper extraction.
++        await initPromise;
++        const text = String(params?.text ?? '');
++        const sec = Number(params?.sec ?? 0);
++        if (!text) { reply({ ok: false, reason: 'empty text' }); break; }
++        try {
++          const count = Number(wasm.getParagraphCount(sec));
++          const lastPara = Math.max(0, count - 1);
++          const lastLen = Number(wasm.getParagraphLength(sec, lastPara));
++          wasm.splitParagraph(sec, lastPara, lastLen);
++          let cursor = lastPara + 1;
++          const lines = text.replace(/\r\n/g, '\n').split('\n');
++          wasm.insertText(sec, cursor, 0, lines[0] ?? '');
++          for (let i = 1; i < lines.length; i += 1) {
++            wasm.splitParagraph(sec, cursor, (lines[i - 1] ?? '').length);
++            cursor += 1;
++            if (lines[i]) wasm.insertText(sec, cursor, 0, lines[i]);
++          }
++          eventBus.emit('document-changed');
++          reply({ ok: true, paraStart: lastPara + 1, paraEnd: cursor });
++        } catch (err: any) {
++          reply(undefined, `insertText failed: ${err?.message || String(err)}`);
++        }
++        break;
++      }
+       default:
+         reply(undefined, `Unknown method: ${method}`);
+     }

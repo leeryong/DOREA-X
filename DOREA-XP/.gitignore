@@ -1,0 +1,110 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+# Exception: backend protected modules — these .so files ARE the source of
+# truth (committed in place of obfuscated .py originals). git must track them.
+!backend/src/**/*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.pytest_cache/
+.mypy_cache/
+
+# Virtual Environment
+venv/
+ENV/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Database / local data
+*.db
+*.sqlite
+*.sqlite3
+DATABASE/
+*.db-shm
+*.db-wal
+
+# Environment / secrets
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+logs/
+
+# Node (Frontend)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+dist/
+dist-ssr/
+*.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Redis
+dump.rdb
+
+# Uploaded Files
+files/
+uploads/
+
+# MCP Config
+config/mcp_servers.json
+config/mcp_config.db
+
+# Local tooling / secrets
+.opencode/
+Ollama/
+ollama/
+MODEL/
+
+# Local artifacts / temp
+temp/
+nul
+
+# Packaging / backup artifacts
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+
+# Session / planning artifacts
+.sisyphus/
+archive/
+
+# Local one-off scripts / sensitive scratch
+openaiapikey.py
+Dockerfile.huridocs-fixed
+fix-nvidia-libs.sh
+test-dots.ocr.py
+
+# Local sample/test payloads
+sample_*.pdf
+test-upload.txt
