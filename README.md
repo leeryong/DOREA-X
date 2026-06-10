@@ -30,7 +30,7 @@
 
 ### 📺 시연 영상 (클릭하여 보기)
 
-<a href="https://www.youtube.com/watch?v=YuG6EbST2LY">
+<a href="https://youtu.be/_elzdn-ohUw?si=8glIDSEkReoY_qh1">
   <img src="DOREA-X-Screenshot_Main.png"
        alt="DOREA-X 시연 영상"
        width="90%"
