@@ -39,9 +39,9 @@
 
 </div>
 
-  ## 🌐 Public Edition: DOREA-XP
+  ## 🌐 DOREA-X Distribution (DOREA-XP) Released
 
-  We provide a public edition that distills the core features so anyone in research, education, or the workplace can get it and use it directly.
+  We have released a distribution that distills the core features so anyone in research, education, or the workplace can get it and use it directly.
 
   ➡️ **[Go to DOREA-XP](DOREA-XP/)** — install with a single line, `./install/install.sh`, as long as Docker is installed
 
