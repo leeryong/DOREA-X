@@ -17,6 +17,10 @@
 
 ## 🆕 최신 소식 (Latest News)
 
+> ### 🇰🇷 한글 HWP/HWPX 문서 지원! (rhwp 기반) — 2026-07
+>
+> 이제 **DOREA-X**가 **한글 HWP/HWPX 문서**까지 읽고 **분석·작성**합니다. [rhwp](https://github.com/leeryong/rhwp-Agent-Skills_by_BLUESKY) 기반으로, PDF·Office에 더해 한글 문서를 자연스럽게 다룹니다.
+
 > ### 🌐 이제 **TAW**에서 에이전트로 만나요!
 >
 > **DOREA-X** — 이제 **[The Agents Web (TAW)](https://github.com/leeryong/The_Agents_Web_TAW)** 플랫폼에서 **에이전트**로 만날 수 있습니다!
@@ -60,7 +64,8 @@
 ## 🚀 주요 기능
 
 - **에이전트 페르소나 설정**: 역할과 목표에 최적화된 에이전트로 나만의 맞춤형 동료 구축
-- **문서 기반 지능형 상호작용**: PDF/HWP/Office문서의 구조를 파악하고 문서 내용에 기반한 논리적 분석 및 대화
+- 🇰🇷 **한글 HWP/HWPX 문서 지원 (NEW)**: [rhwp](https://github.com/leeryong/rhwp-Agent-Skills_by_BLUESKY) 기반으로 한글 문서를 읽고 분석·작성
+- **문서 기반 지능형 상호작용**: **PDF·한글(HWP/HWPX)·Office** 문서의 구조를 파악하고 문서 내용에 기반한 논리적 분석 및 대화
 - **문서 작성 협업**: 기획과 초안 구상부터 최종 완성까지 문서 작성 전 과정을 함께 보조
 - **맥락을 이어가는 작업 메모리**: 대화 내역과 관련 문서를 프로젝트 단위로 관리하여 연속성 있는 작업 환경 제공
 - **자율적인 도구 및 스킬 활용**: 문서처리/분석, 웹 검색 등 필요한 도구(MCP/SKILL)를 스스로 선택하여 문제 해결

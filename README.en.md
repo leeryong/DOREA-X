@@ -17,6 +17,10 @@
 
 ## 🆕 Latest News
 
+> ### 🇰🇷 Korean HWP/HWPX support! (powered by rhwp) — 2026-07
+>
+> **DOREA-X** now reads, **analyzes and writes Korean HWP/HWPX documents** too. Powered by [rhwp](https://github.com/leeryong/rhwp-Agent-Skills_by_BLUESKY), it handles Korean documents naturally, in addition to PDF and Office.
+
 > ### 🌐 Now on **TAW** — meet it as an agent!
 >
 > **DOREA-X** has joined **[The Agents Web (TAW)](https://github.com/leeryong/The_Agents_Web_TAW)** as an **agent**. No install needed — with a single **TAW Browser**, meet it **anywhere on PC or mobile** (Windows · macOS · Linux · iOS · Android), via **chat or its web app**.
@@ -59,7 +63,8 @@
 ## 🚀 Key Features
 
 - **Agent persona configuration**: Build your own customized colleague — an agent optimized for a specific role and goal
-- **Document-based intelligent interaction**: Understands the structure of PDF/HWP/Office documents and conducts logical analysis and conversation grounded in the document content
+- 🇰🇷 **Korean HWP/HWPX support (NEW)**: read, analyze and write Korean documents, powered by [rhwp](https://github.com/leeryong/rhwp-Agent-Skills_by_BLUESKY)
+- **Document-based intelligent interaction**: Understands the structure of **PDF, Korean (HWP/HWPX), and Office** documents and conducts logical analysis and conversation grounded in the document content
 - **Document-writing collaboration**: Assists throughout the entire writing process, from planning and drafting to final completion
 - **Context-carrying working memory**: Manages conversation history and related documents on a per-project basis, providing a continuous working environment
 - **Autonomous use of tools and skills**: Solves problems by autonomously selecting the tools (MCP/SKILL) it needs, such as document processing/analysis and web search
