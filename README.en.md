@@ -17,7 +17,7 @@
 
 ## 🆕 Latest News
 
-> ### 🇰🇷 Korean HWP/HWPX support! (powered by rhwp) — 2026-07
+> ### 🇰🇷 Korean HWP/HWPX support! (powered by rhwp) — 2026-06
 >
 > **DOREA-X** now reads, **analyzes and writes Korean HWP/HWPX documents** too. Powered by [rhwp](https://github.com/leeryong/rhwp-Agent-Skills_by_BLUESKY), it handles Korean documents naturally, in addition to PDF and Office.
 

@@ -17,7 +17,7 @@
 
 ## 🆕 최신 소식 (Latest News)
 
-> ### 🇰🇷 한글 HWP/HWPX 문서 지원! (rhwp 기반) — 2026-07
+> ### 🇰🇷 한글 HWP/HWPX 문서 지원! (rhwp 기반) — 2026-06
 >
 > 이제 **DOREA-X**가 **한글 HWP/HWPX 문서**까지 읽고 **분석·작성**합니다. [rhwp](https://github.com/leeryong/rhwp-Agent-Skills_by_BLUESKY) 기반으로, PDF·Office에 더해 한글 문서를 자연스럽게 다룹니다.
 
